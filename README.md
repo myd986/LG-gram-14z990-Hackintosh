@@ -26,7 +26,7 @@ Hackintosh MacOS on LG Gram14 Z990
 2. BIOS-Advanced-Intel Advanced Menu-Power&Performance-CPU Power Management Control: **CFG Lock [Disabled]** 
 3. BIOS-Advanced-System Agent(SA) Configuration: **VT-d [Disabled]**,  **Above 4GB MMIO BIOS assignment [Enabled]** 
 4. BIOS-Advanced-System Agent(SA) Configuration-Graphics Configuration: **DVMT Pre-Allocated [64M]**
-5. BIOS-Advanced-
+5. BIOS-Advanced-Platform Settings: **System Time and Alarm Sourse [Legacy RTC]**
  
 **2** 对BIOS进行适当的设置后，填入合适的三码，将EFI文件夹复制到[macOS安装器](https://support.apple.com/zh-cn/HT201372)的EFI分区即可直接安装。具体步骤请查阅其他Clover教程。
 
@@ -35,7 +35,7 @@ Hackintosh MacOS on LG Gram14 Z990
 
 - [x] 显卡：仿冒id：0x3E9B0000
   - 快捷键F2、F3调节亮度；
-  - hidpi用one-key-hidpi，推荐注入1424×802防止花屏；
+  - HiDPI用one-key-hidpi，推荐注入1424×802防止花屏；
   - HDMI输出正常（没有注入HDMI2.0，防止使用hdmi连接4K屏幕时默认输出4k@60导致黑屏，可以用RDM/EasyRes更改输出分辨率及频率）；
   - Thunderbolt 3 输出视频未测试；
   
