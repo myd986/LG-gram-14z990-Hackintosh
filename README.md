@@ -74,5 +74,6 @@ Hackintosh MacOS on LG Gram14 Z990
 + XStar-Dev的[电量修正教学](https://xstar-dev.github.io/hackintosh_advanced/Guide_For_Battery_Hotpatch.html)。
 + [神楽小白(GZ小白)](https://blog.gzxiaobai.cn/) 触控板驱动教学。
 + [黑果小兵](https://blog.gzxiaobai.cn/)的诸多教学。
-+ 當然還有 [Clover](https://sourceforge.net/projects/cloverefiboot/) 。
-+ 若有遺漏煩請見諒。
++ [Clover](https://sourceforge.net/projects/cloverefiboot/) 。
++ 最后当然还要感谢[Apple](https://www.apple.com)的[macOS](https://www.apple.com.cn/macos/)系统.
++ 如有遗漏敬请见谅。
