@@ -1,36 +1,43 @@
-# LG-gram-14z990
+LG-gram-14z990
+=========
 
-Hackintosh MacOS on LG Gram13 Z990
+Hackintosh MacOS on LG Gram14 Z990
 本Clover EFI修改自[capricornlee](https://github.com/capricornlee/LG-Gram13-Z990)
 
-## 配置
+配置
+---
 
 |      | 详情                                                      |
 | ---- | --------------------------------------------------------- |
 | 型号 | LG Gram14 Z990                                   |
 | CPU  | Core i5-8265U                                             |
 | 显卡 | Intel UHD Graphics 620（Whiskey Lake）              |
-| 内存 | 8G板载+8G                                                |
+| 内存 | 8G板载+8G                                               |
 | 硬盘 | 原装三星250GB ssd                              |
 | 声卡 | Conexant CX8200                                           |
 | 网卡 | 已替换为 BCM94360CS2（占用一个M.2口） |
 | 蓝牙 | Intel AC-9560 |
 
-## BIOS设置
+使用
+----
 
-修改 BIOS 设定 (开机时按下F2进入 BIOS 后，Ctrl + Alt + F7 开启 BIOS 隐藏选项，感谢 **@as695336480** 提供[方法](https://github.com/capricornlee/LG-Gram13-Z990/issues/7#issue-624133249)）
-  1. BIOS-Main-Boot Features: **CMS Support [No]**, **Fast Boot [Disabled]**
-	2. BIOS-Advanced-Intel Advanced Menu-Power&Performance-CPU Power Management Control: **CFG Lock [Disabled]**
-	3. BIOS-Advanced-System Agent(SA) Configuration: **VT-d [Disabled]**,  **Above 4GB MMIO BIOS assignment [Enabled]**
-	4. BIOS-Advanced-System Agent(SA) Configuration-Graphics Configuration: **DVMT Pre-Allocated [64M]**
-  5. BIOS-Advanced-
+**1** 修改 BIOS 设定 (开机时按下F2进入 BIOS 后，Ctrl + Alt + F7 开启 BIOS 隐藏选项，感谢 **@as695336480** 提供[方法](https://github.com/capricornlee/LG-Gram13-Z990/issues/7#issue-624133249)）
+1. BIOS-Main-Boot Features: **CMS Support [No]**, **Fast Boot [Disabled]** 
+2. BIOS-Advanced-Intel Advanced Menu-Power&Performance-CPU Power Management Control: **CFG Lock [Disabled]** 
+3. BIOS-Advanced-System Agent(SA) Configuration: **VT-d [Disabled]**,  **Above 4GB MMIO BIOS assignment [Enabled]** 
+4. BIOS-Advanced-System Agent(SA) Configuration-Graphics Configuration: **DVMT Pre-Allocated [64M]**
+5. BIOS-Advanced-
+ 
+**2** 对BIOS进行适当的设置后，填入合适的三码，将EFI文件夹复制到[macOS安装器](https://support.apple.com/zh-cn/HT201372)的EFI分区即可直接安装。具体步骤请查阅其他Clover教程。
 
-## 驱动完善
+驱动完善
+---
 
 - [x] 显卡：仿冒id：0x3E9B0000
-  - HDMI输出正常（没有注入HDMI2.0，防止使用hdmi链接4K屏幕时默认输出4k@60导致黑屏，可以用RDM/EasyRes更改输出分辨率及频率）；
   - 快捷键F2、F3调节亮度；
   - hidpi用one-key-hidpi，推荐注入1424×802防止花屏；
+  - HDMI输出正常（没有注入HDMI2.0，防止使用hdmi连接4K屏幕时默认输出4k@60导致黑屏，可以用RDM/EasyRes更改输出分辨率及频率）；
+  - Thunderbolt 3 输出视频未测试；
   
 - [x] 声卡：注入id：21，fn+F11、F12调节声音正常，耳机孔正常
 
@@ -57,8 +64,11 @@ Hackintosh MacOS on LG Gram13 Z990
 
 - [x] USB：最好自行定制一下USB端口
 
+- [x] SD读卡器可以驱动（有时在睡眠唤醒后无法使用，重启即可）。
 
-### 致謝
+致謝
+---
+
 + [suzuke](https://github.com/suzuke/LG-Gram-13z980-Opencore) 本EFI的基础。
 + [OC-little](https://github.com/daliansky/OC-little) 提供了非常多SSDT修正的参考。
 + XStar-Dev的[电量修正教学](https://xstar-dev.github.io/hackintosh_advanced/Guide_For_Battery_Hotpatch.html)。
