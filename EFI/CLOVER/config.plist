@@ -46,7 +46,7 @@
 					<key>Replace</key>
 					<data>WE9TSQ==</data>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
 				</dict>
@@ -89,6 +89,16 @@
 					<false/>
 					<key>Comment</key>
 					<string>Set Mutex BATM, 0x01 to 0x0</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R0xVWAA=</data>
+					<key>Replace</key>
+					<data>R0xVWQA=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>GLUX to GLUY</string>
 				</dict>
 			</array>
 			<key>Fixes</key>
@@ -133,7 +143,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Arguments</key>
-		<string>dart=0 brcmfx-country=#a darkwake=0 igfxfw=2</string>
+		<string>igfxfw=2</string>
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>XMPDetection</key>
@@ -141,14 +151,14 @@
 		<key>RtcHibernateAware</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>0</integer>
+		<integer>5</integer>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 	</dict>
 	<key>GUI</key>
 	<dict>
 		<key>Theme</key>
-		<string>Bootcamp2k</string>
+		<string>blackbc</string>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -165,24 +175,26 @@
 			<key>Entries</key>
 			<array>
 				<dict>
-					<key>NoCaches</key>
-					<false/>
-					<key>Type</key>
-					<string>OSXRecovery</string>
-					<key>Hidden</key>
-					<false/>
-					<key>Disabled</key>
-					<false/>
-					<key>Ignore</key>
-					<false/>
-				</dict>
-				<dict>
 					<key>Type</key>
 					<string>Windows</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Title</key>
 					<string>Windows</string>
+					<key>Ignore</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>NoCaches</key>
+					<false/>
+					<key>Type</key>
+					<string>OSXRecovery</string>
+					<key>Hidden</key>
+					<false/>
+					<key>Title</key>
+					<string>macOS Catalina</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Ignore</key>
 					<false/>
 				</dict>
@@ -235,14 +247,12 @@
 				<data>EgAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
 				<key>framebuffer-con0-pipe</key>
 				<data>EgAAAA==</data>
-				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>AACbPg==</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
