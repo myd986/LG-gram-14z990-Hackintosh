@@ -36,19 +36,19 @@
 					<key>Replace</key>
 					<data>RUNfXw==</data>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Comment</key>
 					<string>Rename H_EC to EC (USB Power)</string>
 				</dict>
 				<dict>
 					<key>Find</key>
-					<data>X09TSQ==</data>
+					<data>X1NUQQCgCpNOMDExAaQ=</data>
 					<key>Replace</key>
-					<data>WE9TSQ==</data>
+					<data>WFNUQQCgCpNOMDExAaQ=</data>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
+					<string>_STA to XSTA in TPD0</string>
 				</dict>
 				<dict>
 					<key>Find</key>
@@ -151,7 +151,7 @@
 		<key>RtcHibernateAware</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>2</integer>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 	</dict>
@@ -343,14 +343,10 @@
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>CsrActiveConfig</key>
-		<string>0x67</string>
-		<key>MLB</key>
-		<string></string>
-		<key>ROM</key>
-		<data></data>
 		<key>BooterConfig</key>
 		<string>0x28</string>
+		<key>CsrActiveConfig</key>
+		<string>0x67</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -376,24 +372,18 @@
 		<string>0x02</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
+		<key>Mobile</key>
+		<true/>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string></string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
-		<key>SmUUID</key>
-		<string></string>
-		<key>Mobile</key>
-		<true/>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>EfiVersion</key>
 		<string>1037.80.41.0.0</string>
-		<key>SerialNumber</key>
-		<string></string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>BiosReleaseDate</key>
