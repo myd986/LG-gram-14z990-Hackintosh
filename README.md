@@ -68,7 +68,7 @@ Hackintosh MacOS on LG Gram14 Z990
 
 参考
 ---
-![CPU](PIC/cpu.png)
+
 ![GPU](PIC/gpu.png)
 
 致謝
