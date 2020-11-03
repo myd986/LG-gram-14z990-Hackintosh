@@ -1,22 +1,22 @@
 LG-gram-14z990
 =========
-
+![Hackintosh](PIC/os.png)
 Hackintosh MacOS on LG Gram14 Z990
 本Clover EFI修改自[capricornlee](https://github.com/capricornlee/LG-Gram13-Z990)
 
 配置
 ---
 
-|      | 详情                                                      |
-| ---- | --------------------------------------------------------- |
-| 型号 | LG Gram14 Z990                                   |
-| CPU  | Core i5-8265U                                             |
-| 显卡 | Intel UHD Graphics 620（Whiskey Lake）              |
-| 内存 | 8G板载+8G                                               |
-| 硬盘 | 原装三星250GB ssd                              |
-| 声卡 | Conexant CX8200                                           |
-| 网卡 | 已替换为 BCM94360CS2（占用一个M.2口） |
-| 蓝牙 | Intel AC-9560 |
+|      | 详情   |
+| ---- | -----------------------------------------|
+| 型号 | LG Gram14 Z990|
+| CPU  | Core i5-8265U|
+| 显卡 | Intel UHD Graphics 620（Whiskey Lake）|
+| 内存 | 8G板载+8G|
+| 硬盘 | 已更换为西数蓝盘 SN550 1TB|
+| 声卡 | Conexant CX8200|
+| 网卡 | 已替换为 BCM94360CS2（占用一个M.2口）|
+| 蓝牙 | Intel AC-9560|
 
 使用
 ----
@@ -42,7 +42,7 @@ Hackintosh MacOS on LG Gram14 Z990
 - [x] 声卡：注入id：21，fn+F11、F12调节声音正常，耳机孔正常
 
 - [x] 蓝牙：两种方案，用Intel或者BCM的都可以，BCM要额外占用一个USB口，我选择了用Intel
-  - Intel的蓝牙驱动在远景有大神做出来了，放到驱动文件夹就好；（罗技低功耗蓝牙鼠标基本用不了，蓝牙耳机无法开启话筒，除非从Windows重启进macOS）
+  - Intel的蓝牙驱动在远景论坛上[qcwap2012大佬](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1838959&highlight=Intel%C0%B6%D1%C0)做出来了，放到驱动文件夹就好；（罗技低功耗蓝牙鼠标基本用不了，蓝牙耳机无法开启话筒，除非从Windows重启进macOS）
   - bcm的免驱但是需要自己走线，占用一个USB口
   
 - [x] 网卡：Intel可以驱动但尚未完善，无法启用系统内建的Wi-Fi开关，装BCM免驱卡，买m.2 Mkey转接卡占用一个硬盘口。
@@ -69,6 +69,7 @@ Hackintosh MacOS on LG Gram14 Z990
 参考
 ---
 ![CPU](PIC/cpu.png)
+![GPU](PIC/gpu.png)
 
 致謝
 ---
