@@ -1,11 +1,10 @@
-LG-gram-14z990
-=========
+# LG-gram-14z990
+
 ![Hackintosh](PIC/os.png)
 Hackintosh MacOS on LG Gram14 Z990
 本Clover EFI修改自[capricornlee](https://github.com/capricornlee/LG-Gram13-Z990)
 
-配置
----
+## 配置
 
 |      | 详情   |
 | ---- | -----------------------------------------|
@@ -18,8 +17,7 @@ Hackintosh MacOS on LG Gram14 Z990
 | 网卡 | 已替换为 BCM94360CS2（占用一个M.2口）|
 | 蓝牙 | Intel AC-9560|
 
-使用
-----
+## 使用
 
 **1** 修改 BIOS 设定 (开机时按下F2进入 BIOS 后，Ctrl + Alt + F7 开启 BIOS 隐藏选项，感谢 **@as695336480** 提供[方法](https://github.com/capricornlee/LG-Gram13-Z990/issues/7#issue-624133249)）
 1. BIOS-Main-Boot Features: **CMS Support [No]**, **Fast Boot [Disabled]** 
@@ -30,8 +28,7 @@ Hackintosh MacOS on LG Gram14 Z990
  
 **2** 对BIOS进行适当的设置后，填入合适的三码，将EFI文件夹复制到[macOS安装器](https://support.apple.com/zh-cn/HT201372)的EFI分区即可直接安装。具体步骤请查阅其他Clover教程。
 
-驱动完善
----
+## 驱动完善
 
 - [x] 显卡：仿冒id：0x3E9B0000
   - 快捷键F2、F3调节亮度；
@@ -66,13 +63,17 @@ Hackintosh MacOS on LG Gram14 Z990
 
 - [x] SD读卡器可以驱动（有时在睡眠唤醒后无法使用，重启即可）。
 
-参考
----
+## 更新记录
+
+### 2020.11.3
+* 添加OC6.3启动，暂命名为OC β0.1（触控板无法使用，其他初步看来正常）
+
+## 参考
+
 ![CPU](PIC/cpu.png)
 ![GPU](PIC/gpu.png)
 
-致謝
----
+## 致謝
 
 + [suzuke](https://github.com/suzuke/LG-Gram-13z980-Opencore) 本EFI的基础。
 + [OC-little](https://github.com/daliansky/OC-little) 提供了非常多SSDT修正的参考。
