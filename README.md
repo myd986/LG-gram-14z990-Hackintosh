@@ -66,6 +66,10 @@ Hackintosh MacOS on LG Gram14 Z990
 
 - [x] SD读卡器可以驱动（有时在睡眠唤醒后无法使用，重启即可）。
 
+参考
+---
+![CPU](PIC/cpu.png)
+
 致謝
 ---
 
