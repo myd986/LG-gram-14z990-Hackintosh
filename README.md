@@ -28,12 +28,12 @@ Hackintosh MacOS on LG Gram14 Z990
  
 **2** 对BIOS进行适当的设置后，填入合适的三码，将EFI文件夹复制到[macOS安装器](https://support.apple.com/zh-cn/HT201372)的EFI分区即可直接安装。具体步骤请查阅其他Clover教程。
 
-## 驱动完善
+## 驱动完善（OC）
 
-- [x] 显卡：仿冒id：0x3E9B0000
+- [x] 显卡：仿冒id：0x3EA50000
   - 快捷键F2、F3调节亮度；
-  - HiDPI用one-key-hidpi，推荐注入1424×802防止花屏；
-  - HDMI输出正常（没有注入HDMI2.0，防止使用hdmi连接4K屏幕时默认输出4k@60导致黑屏，可以用RDM/EasyRes更改输出分辨率及频率）；
+  - HiDPI用[one-key-hidpi](https://github.com/xzhih/one-key-hidpi)，推荐注入1424×802防止花屏；
+  - HDMI输出正常（Gram的HDMI是1.4，不能输出4k@60）；
   - Thunderbolt 3 输出视频未测试；
   
 - [x] 声卡：注入id：21，fn+F11、F12调节声音正常，耳机孔正常
@@ -43,12 +43,13 @@ Hackintosh MacOS on LG Gram14 Z990
   - bcm的免驱但是需要自己走线，占用一个USB口
   
 - [x] 网卡：Intel可以驱动但尚未完善，无法启用系统内建的Wi-Fi开关，装BCM免驱卡，买m.2 Mkey转接卡占用一个硬盘口。
+  - Airdrop/Handoff正常
 
-- [x] 电池：正常显示电量，提取DSDT修改，参考RehabMan大神的教程
+- [ ] 电池：正常显示电量，提取DSDT修改，参考RehabMan大神的教程
   - 电池用量正常；
-  - 电源管理正常
-  - 出现合盖仅关闭屏幕而不睡眠的问题，待解决
-  - 其他如手动进入睡眠、开盖唤醒、键盘唤醒正常；
+  - 无法开启原生电源管理；
+  - ~~出现合盖仅关闭屏幕而不睡眠的问题，待解决~~;
+  - 睡眠唤醒正常~~其他如手动进入睡眠、开盖唤醒、键盘唤醒正常~~；
   
 - [x] 键盘正常
   - 键盘Fn键没有修复，仅Fn+F4、Fn+F8、Fn+F10、Fn+F11、Fn+F12可以正常使用，（可以在设置中将F2、F3设置成亮度调节）
@@ -65,6 +66,10 @@ Hackintosh MacOS on LG Gram14 Z990
 
 ## 更新记录
 
+### 2020.11.5
+* OC6.3 基本稳定，可以引导macOS 10.15.7和win10
+* 存在无法开启原生电源管理的问题，注入SSDT-PLUG会导致无法睡眠，待解决
+
 ### 2020.11.3
 * 添加OC6.3启动，暂命名为OC β0.1 ~~（触控板无法使用，其他初步看来正常）~~ 似乎与Clover进度相同
 
@@ -75,11 +80,13 @@ Hackintosh MacOS on LG Gram14 Z990
 
 ## 致謝
 
-+ [suzuke](https://github.com/suzuke/LG-Gram-13z980-Opencore) 本EFI的基础。
++ [capricornlee](https://github.com/capricornlee/LG-Gram13-Z990) 本EFI的基础。
++ [suzuke](https://github.com/suzuke/LG-Gram-13z980-Opencore) 提供了相当多的SSDT修正启发。
 + [OC-little](https://github.com/daliansky/OC-little) 提供了非常多SSDT修正的参考。
 + XStar-Dev的[电量修正教学](https://xstar-dev.github.io/hackintosh_advanced/Guide_For_Battery_Hotpatch.html)。
 + [神楽小白(GZ小白)](https://blog.gzxiaobai.cn/) 触控板驱动教学。
 + [黑果小兵](https://blog.gzxiaobai.cn/)的诸多教学。
 + [Clover](https://sourceforge.net/projects/cloverefiboot/) 。
-+ 最后当然还要感谢[Apple](https://www.apple.com)的[macOS](https://www.apple.com.cn/macos/)系统.
++ [acidanthera](https://github.com/acidanthera) Opencore团队。
++ [Apple](https://www.apple.com)的[macOS](https://www.apple.com.cn/macos/)系统.
 + 如有遗漏敬请见谅。
