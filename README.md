@@ -1,6 +1,7 @@
 # LG-gram-14z990
 
-![Hackintosh](PIC/Big Sur.png)
+![Big Sur](PIC/Big Sur.png)
+
 Hackintosh MacOS on LG Gram14 Z990
 本Clover EFI修改自[capricornlee](https://github.com/capricornlee/LG-Gram13-Z990)
 本OpenCore EFI修改自[YJack007](http://bbs.pcbeta.com/viewthread-1876088-1-1.html)
