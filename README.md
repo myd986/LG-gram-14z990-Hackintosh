@@ -42,12 +42,12 @@ Hackintosh MacOS on LG Gram14 Z990
   - Intel的蓝牙驱动在远景论坛上[qcwap2012大佬](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1838959&highlight=Intel%C0%B6%D1%C0)做出来了，放到驱动文件夹就好；（罗技低功耗蓝牙鼠标基本用不了，蓝牙耳机无法开启话筒，除非从Windows重启进macOS）
   - bcm的免驱但是需要自己走线，占用一个USB口
   
-- [x] 网卡：Intel可以驱动但尚未完善，无法启用系统内建的Wi-Fi开关，装BCM免驱卡，买m.2 Mkey转接卡占用一个硬盘口。
+- [x] 网卡：Intel可以驱动但尚未完善， ~~无法启用系统内建的Wi-Fi开关，~~ 实测能跑到70Mbps,不适合日常使用。装BCM免驱卡，买m.2 Mkey转接卡占用一个硬盘口，可以跑满250Mbps（入户250Mbps）。
   - Airdrop/Handoff正常
 
-- [ ] 电池：正常显示电量，提取DSDT修改，参考RehabMan大神的教程
+- [x] 电池：正常显示电量，提取DSDT修改，参考RehabMan大神的教程
   - 电池用量正常；
-  - 无法开启原生电源管理；
+  - ~~无法开启原生电源管理；~~
   - ~~出现合盖仅关闭屏幕而不睡眠的问题，待解决~~;
   - 睡眠唤醒正常~~其他如手动进入睡眠、开盖唤醒、键盘唤醒正常~~；
   
@@ -62,9 +62,15 @@ Hackintosh MacOS on LG Gram14 Z990
 
 - [x] USB：最好自行定制一下USB端口
 
-- [x] SD读卡器可以驱动（有时在睡眠唤醒后无法使用，重启即可）。
+- [x] SD读卡器可以驱动（有时在睡眠唤醒后无法使用，重启即可）。(更换OC引导后尚未测试SD读卡器)
 
 ## 更新记录
+
+### 2021.2.5
+
+* OC6.4 稳定，可以安装macOS 11.2（win10 尚未测试）
+* 当前除Fn快捷键和未测试的引导win 10外未发现其他问题
+* 感谢**YJack007**在远景论坛提供的[OC引导配置](http://bbs.pcbeta.com/viewthread-1876088-1-1.html)，为我省去了很多麻烦。
 
 ### 2020.11.5
 * OC6.3 基本稳定，可以引导macOS 10.15.7和win10
@@ -80,12 +86,13 @@ Hackintosh MacOS on LG Gram14 Z990
 
 ## 致謝
 
-+ [capricornlee](https://github.com/capricornlee/LG-Gram13-Z990) 本EFI的基础。
++ [capricornlee](https://github.com/capricornlee/LG-Gram13-Z990) CLOVER引导配置的基础。
++ [YJack007](http://bbs.pcbeta.com/viewthread-1876088-1-1.html) OC引导配置的基础。
 + [suzuke](https://github.com/suzuke/LG-Gram-13z980-Opencore) 提供了相当多的SSDT修正启发。
 + [OC-little](https://github.com/daliansky/OC-little) 提供了非常多SSDT修正的参考。
 + XStar-Dev的[电量修正教学](https://xstar-dev.github.io/hackintosh_advanced/Guide_For_Battery_Hotpatch.html)。
 + [神楽小白(GZ小白)](https://blog.gzxiaobai.cn/) 触控板驱动教学。
-+ [黑果小兵](https://blog.gzxiaobai.cn/)的诸多教学。
++ [黑果小兵](https://blog.gzxiaobai.cn/) 的诸多教学。
 + [Clover](https://sourceforge.net/projects/cloverefiboot/) 。
 + [acidanthera](https://github.com/acidanthera) Opencore团队。
 + [Apple](https://www.apple.com)的[macOS](https://www.apple.com.cn/macos/)系统.
