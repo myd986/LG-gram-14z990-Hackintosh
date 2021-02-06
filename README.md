@@ -68,10 +68,10 @@ Hackintosh MacOS on LG Gram14 Z990
 
 ## 更新记录
 
-### 2021.2.5
+### 2021.2.6
 
-* OC6.4 稳定，可以安装macOS 11.2（win10 尚未测试）
-* 当前除Fn快捷键和未测试的引导win 10外未发现其他问题
+* OC6.4 稳定，可以引导macOS 11.2和Windows 10 双系统，支持Boot Camp切换系统 ~~（win10 尚未测试）~~
+* 当前除Fn快捷键 ~~和未测试的引导win 10~~ 外未发现其他问题
 * 感谢**YJack007**在远景论坛提供的[OC引导配置](http://bbs.pcbeta.com/viewthread-1876088-1-1.html)，为我省去了很多麻烦。
 
 ### 2020.11.5
