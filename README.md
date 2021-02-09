@@ -71,6 +71,7 @@ Hackintosh macOS on LG Gram14 Z990
 
 ![CPU](PIC/cpu.png)
 ![GPU HEVC硬解](PIC/HEVC.png)
+![GPU H.264硬解](PIC/h.264.png)
 
 ## 致謝
 
