@@ -51,6 +51,7 @@ Hackintosh macOS on LG Gram14 Z990
 2. System Perferences-Battery-Power Adapter: **Put hard disk to sleep when possible [Disabled]**
 3. 自己重新定制USB
 4. 使用[karabiner](https://karabiner-elements.pqrs.org)设置快捷键（如果有朋友愿意定制Fn快捷键请加油！）
+5. 为了更好地引导Windows，强烈建议使用本机真实UUID作为OC的UUID。
 
 ## 更新记录
 
