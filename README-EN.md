@@ -20,7 +20,7 @@ This OpenCore EFI is modified from [YJack007](http://bbs.pcbeta.com/viewthread-1
 | Memory | 8G(Build-in)+8G|
 | Driver | Have been changed to SN550 1TB|
 | Sound Card | Conexant CX8200|
-| Network Card | BCM94360CS2（占用一个M.2口）|
+| Network Card | BCM94360CS2(Use a m.2 port)|
 | Bluetooth | Intel AC-9560|
 
 ## 工作情况
