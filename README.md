@@ -2,7 +2,7 @@
 
 ![BigSur](PIC/BigSur.png)
 
-Hackintosh macOS on LG Gram14 Z990
+Hackintosh macOS on LG Gram14 Z990. [EN](README-EN.md)
 
 本Clover EFI修改自[capricornlee](https://github.com/capricornlee/LG-Gram13-Z990) 
 
