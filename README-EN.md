@@ -23,7 +23,7 @@ This OpenCore EFI is modified from [YJack007](http://bbs.pcbeta.com/viewthread-1
 | Network Card | BCM94360CS2(Use a m.2 port)|
 | Bluetooth | Intel AC-9560|
 
-## 工作情况
+## What is working
 - [x] Sound(Speaker，3.5mm headphone plug)
 - [x] Display(HEVC+H.264 4K hardware decoding; HDMI can output up to 2K@60)
 - [x] Wi-Fi(Broadcom Network Card)/Intel Bluetooth(Airdrop;Handoff)
@@ -35,7 +35,7 @@ This OpenCore EFI is modified from [YJack007](http://bbs.pcbeta.com/viewthread-1
 - [ ] Thunderbolt 3(I have not any device to test it, and it might lead to sleep issues.)
 - [ ] Card reader
 
-## 使用
+## Usage
 
 **1** BIOS settings ---- After press the F2 key into BIOS settings, press Ctrl + Alt + F7 to enable hiding options of BIOS.(thanks [method](https://github.com/capricornlee/LG-Gram13-Z990/issues/7#issue-624133249) provided by  **@as695336480** ）
 1. BIOS-Main-Boot Features: **CMS Support [No]**, **Fast Boot [Disabled]** 
