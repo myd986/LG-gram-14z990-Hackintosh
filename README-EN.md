@@ -20,7 +20,7 @@ This OpenCore EFI is modified from [YJack007](http://bbs.pcbeta.com/viewthread-1
 | Memory | 8G(Build-in)+8G|
 | Driver | Have been changed to SN550 1TB|
 | Sound Card | Conexant CX8200|
-| Network Card | BCM94360CS2(Use a m.2 port)|
+| Network Card | Intel AC-9560|
 | Bluetooth | Intel AC-9560|
 
 ## What is working
@@ -33,7 +33,7 @@ This OpenCore EFI is modified from [YJack007](http://bbs.pcbeta.com/viewthread-1
 - [x] USB Mapping
 - [x] iServices
 - [ ] Thunderbolt 3(I have not any device to test it, and it might lead to sleep issues.)
-- [ ] Card reader
+- [x] Card reader
 
 ## Usage
 
@@ -54,6 +54,14 @@ This OpenCore EFI is modified from [YJack007](http://bbs.pcbeta.com/viewthread-1
 5. For boot Windows better, suggest using real UUID of your gram as the UUID in OC config.
 
 ## Update log
+
+### 2021.2.21
+* Update to OC 6.6
+* Update all kexts except USBInjectAll and VoodooI2C.
+* Fix Card Reader
+* Fix F4 key
+* Enable "Disable RTC wake scheduling" Patch. If you need power nap, disable it.
+* Use Intel AC-9560 instead BCM Network Card. Now, the last AirportItlwm can provide 170Mbps of bandwidth, and support Handoff and Airdrop as well. It is enough for daily use. Read offcial [Dos](https://openintelwireless.github.io) for more details. 
 
 ### 2021.2.6
 
