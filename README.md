@@ -32,7 +32,7 @@ Hackintosh macOS on LG Gram14 Z990. [EN](README-EN.md)
 - [x] 触控板
 - [x] USB定制
 - [x] iServices
-- [ ] 雷电 3 (没有设备且很可能导致睡眠问题)
+- [ ] 雷电 3 (没有设备进行测试且很可能导致睡眠问题)
 - [x] 读卡器
 
 ## 使用
