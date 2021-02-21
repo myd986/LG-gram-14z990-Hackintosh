@@ -20,20 +20,20 @@ Hackintosh macOS on LG Gram14 Z990. [EN](README-EN.md)
 | 内存 | 8G板载+8G|
 | 硬盘 | 已更换为西数蓝盘 SN550 1TB|
 | 声卡 | Conexant CX8200|
-| 网卡 | BCM94360CS2（占用一个M.2口）|
+| 网卡 | Intel AC-9560|
 | 蓝牙 | Intel AC-9560|
 
 ## 工作情况
 - [x] 声卡（扬声器，3.5mm耳机）
 - [x] 显卡（HEVC+H.264 4K双硬解；HDMI输出最高2K@60）
-- [x] Wi-Fi（博通网卡）/Intel蓝牙（Airdrop；Handoff）
-- [x] 电源（电量显示；原生电源管理；CPU变频；睡眠一晚掉电1%）
-- [ ] 键盘（Fn功能键未修复，F8 F10 F11 F12可正常使用）
+- [x] Wi-Fi/蓝牙（Airdrop；Handoff）
+- [x] 电源（电量显示；原生电源管理；CPU变频；睡眠一晚掉电4%）
+- [ ] 键盘（Fn功能键未修复，F4 F8 F10 F11 F12可正常使用）
 - [x] 触控板
 - [x] USB定制
 - [x] iServices
-- [ ] Thunderbolt 3 (没有设备且很可能导致睡眠问题)
-- [ ] Card reader
+- [ ] 雷电 3 (没有设备且很可能导致睡眠问题)
+- [x] 读卡器
 
 ## 使用
 
@@ -54,6 +54,15 @@ Hackintosh macOS on LG Gram14 Z990. [EN](README-EN.md)
 5. 为了更好地引导Windows，强烈建议使用本机真实UUID作为OC的UUID。
 
 ## 更新记录
+
+### 2021.2.21
+
+* 升级 OC 6.6
+* 升级除VoodooI2C和USBinjectall外所有kext到最新版本（使用2.5.2及更高版本的VoodooI2C会由于未知原因无法驱动，有知道原因或解决办法的朋友请提交issue）
+* 添加读卡器支持（睡眠唤醒后可能无法使用读卡器）
+* 添加F4快捷键支持，修复F4睡眠崩溃的问题
+* 添加阻止RTC唤醒补丁，需要使用电能小憩请禁用该补丁
+* 移除BCM94360CS2，使用内建的Intel AC9560，**zxystd**更新的AirportItlwm-1.3.0-alpha已经支持40MHz，经测试可以提供170Mbps的带宽，基本满足日常使用，具体的支持情况请访问[官方文档](https://openintelwireless.github.io)
 
 ### 2021.2.6
 
