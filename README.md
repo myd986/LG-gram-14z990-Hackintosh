@@ -62,7 +62,7 @@ Hackintosh macOS on LG Gram14 Z990. [EN](README-EN.md)
 * 添加读卡器支持（睡眠唤醒后可能无法使用读卡器）
 * 添加F4快捷键支持，修复F4睡眠崩溃的问题
 * 添加阻止RTC唤醒补丁，需要使用电能小憩请禁用该补丁
-* 移除BCM94360CS2，使用内建的Intel AC9560，**zxystd**更新的AirportItlwm-1.3.0-alpha已经支持40MHz，经测试可以提供170Mbps的带宽，基本满足日常使用，具体的支持情况请访问[官方文档](https://openintelwireless.github.io)
+* 移除BCM94360CS2，使用内建的Intel AC9560，**@zxystd**更新的AirportItlwm-1.3.0-alpha已经支持40MHz，经测试可以提供170Mbps的带宽，基本满足日常使用，具体的支持情况请访问[官方文档](https://openintelwireless.github.io)
 
 ### 2021.2.6
 
