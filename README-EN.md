@@ -1,5 +1,7 @@
 # LG-gram-14z990
 
+## Notice! This device has been sold, EFI for new versions of macOS will no longer be updated in the futur. 16/9/2022
+
 ![BigSur](PIC/BigSur.png)
 
 Hackintosh macOS on LG Gram14 Z990
