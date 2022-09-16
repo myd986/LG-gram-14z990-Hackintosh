@@ -1,5 +1,7 @@
 # LG-gram-14z990
 
+## 注意！机器已出手，换了MacBook pro(M1 pro)，不再更新配置文件（虽然已经很久没更新了）。2022/9/16
+
 ![BigSur](PIC/BigSur.png)
 
 Hackintosh macOS on LG Gram14 Z990. [EN](README-EN.md)
